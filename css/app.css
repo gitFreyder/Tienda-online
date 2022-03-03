@@ -103,3 +103,16 @@ h1{
 
 
        
+
+        .categoria img{
+            height: 20rem;
+            width: 100%;
+            object-fit: cover;
+            transition-property: transform;
+            transition-duration: 300ms;/* or .3s*/
+        }
+
+        /* section categoria */
+        .categoria img:hover{
+            transform: scale(1.2);
+        }
