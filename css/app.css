@@ -1,7 +1,18 @@
 /* fuente Google font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap');
 
+:root{
+    --bs-teal: #4b6e4b;
+    --bs-blue:#142f47;
+}
 
+.bg-success{
+    background-color: var(--bs-teal)!important;
+}
+.btn-primary{
+    background-color: var(--bs-blue);
+    border: none;
+}
 html{
     font-size: 62.5%; /*1rem 10px */
 }
@@ -29,6 +40,23 @@ h1{
     
   }
 
+  h2{
+      font-size: 3.2rem;/* or 32px*/
+  }
+  @media(max-width:768px) {
+     h2{
+        font-size: 4rem;
+     }
+  }
+
+  h3{
+    font-size: 3.4rem;/* or 32px*/
+}
+@media(max-width:768px) {
+   h3{
+      font-size: 3rem;
+   }
+}
 
   .hero{
       background-image: url('https://images.unsplash.com/photo-1464465474479-26aa7f69b834?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80');
@@ -39,11 +67,22 @@ h1{
       height: 25rem;
   }
 
+
   @media(min-width:768px) {
     .hero{
         height: 550px;
       }
     }
+
+
+    /* imagen producto aplicar tamaño*/
+    @media(min-width:768px) {
+    .class-object-fill img{
+        height: 40rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
 
 
 
@@ -61,3 +100,6 @@ h1{
             color: green;
         }
   
+
+
+       
