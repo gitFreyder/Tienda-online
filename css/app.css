@@ -116,3 +116,13 @@ h1{
         .categoria img:hover{
             transform: scale(1.2);
         }
+
+
+
+        /*galeria*/
+        .galeria li{
+            margin-bottom: 1rem;
+        }
+        .galeria li:last-of-type{
+            margin-bottom: 0;
+        }
